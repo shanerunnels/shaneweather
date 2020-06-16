@@ -1,0 +1,5 @@
+.day1, .day2, .day3, .day4, .day5 {
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 0 10px;
+}

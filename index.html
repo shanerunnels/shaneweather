@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Wherever</title>
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <span class="mx-auto navbar-brand mb-0 h1">Weather Dashboard</span>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-4">
+                <p><strong>Search for a City: </strong></p>
+                <div class="input-group mb-3">
+                    <input type="text" class="search-input form-control" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="search-btn btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                class="fas fa-search-location"></i></button>
+                    </div>
+                </div>
+                <div id="past-cities" class="list-group">
+                    
+                </div>
+            </aside>
+
+            <section class="col-md-8 hide">
+                <div class="jumbotron jumbotron-fluid">
+                    <h3 class="cityName"></h3>
+                    <hr>
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                    <p class="windspeed"></p>
+                </div>
+                <div>
+                    <h3>5 Day Forecast: </h3>
+                    <div class="row">
+                        <div class="day1 col-md-2"></div>
+                        <div class="day2 col-md-2"></div>
+                        <div class="day3 col-md-2"></div>
+                        <div class="day4 col-md-2"></div>
+                        <div class="day5 col-md-2"></div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ecf6550535.js" crossorigin="anonymous"></script>
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
